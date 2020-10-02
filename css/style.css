@@ -90,7 +90,7 @@ h6 {
 }
 
 /*--------------------*/
-body {
+about {
   font-family: "Lato", sans-serif;
 }
 
@@ -104,6 +104,7 @@ body {
   background-image: url("../img/BG-Header.png");
   background-repeat: no-repeat;
   background-position: center;
+  padding: 0 15px;
 }
 
 .header__container {
@@ -178,8 +179,10 @@ body {
 
 .header__nav {
   height: 58px;
-  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
   background-color: #fff;
+  border-bottom: 2px solid #fcfcfc;
 }
 
 .header__list {
@@ -205,4 +208,88 @@ body {
 
 .header__link.active {
   color: #ada074;
+}
+
+.about-body {
+  max-width: 825px;
+  margin: 130px auto 60px auto;
+  text-align: center;
+}
+
+.about-body__title {
+  margin: 0px 0px 70px 0px;
+}
+
+.about-body__h2 {
+  color: #000000;
+  font-size: 34px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 8.95px;
+  line-height: 40px;
+  margin-bottom: 73px;
+}
+
+.about-body__h2:after {
+  content: "";
+  display: block;
+  width: 81px;
+  height: 3px;
+  background: #404040;
+  position: absolute;
+  left: 50%;
+  margin: 35px 0 0 -40.5px;
+}
+
+.about-body__text {
+  text-align: center;
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 25.89px;
+}
+
+.about-body-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.about-body-row__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  margin: 0px 0px 30px 0px;
+}
+
+.about-body-row__image {
+  width: 92px;
+  height: 92px;
+  border: 2px solid #f1f1f1;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 41px 0px;
+}
+
+.about-body-row__title {
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3.52px;
+  margin: 0px 0px 35px 0px;
+}
+
+.about-body-row__subtitle {
+  color: #868585;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
 }
