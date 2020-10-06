@@ -91,7 +91,6 @@ body {
 }
 .header__nav {
 	height: 58px;
-	max-width: 1500px;
 	margin: 0 auto;
 	background-color: #fff;
 	border-bottom: 2px solid #fcfcfc;
@@ -110,6 +109,9 @@ body {
 	text-transform: uppercase;
 	line-height: 58px;
 	&.active {
+		color: #ada074;
+	}
+	&:hover {
 		color: #ada074;
 	}
 }
@@ -247,11 +249,12 @@ body {
 	max-width: 1120px;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+
 	padding: 0px 0px 60px 0px;
 }
 .portfolio__column {
 	flex: 0 0 50%;
+	margin: 0 auto;
 	max-width: 50%;
 	padding: 15px 15px;
 	@media (max-width: 1020px) {
@@ -260,9 +263,15 @@ body {
 	}
 }
 .portfolio__item {
-	margin: 0 auto;
+	text-align: center;
 	img {
+		object-fit: cover;
+		max-height: 100%;
 		max-width: 100%;
+		@media (max-width: 1020px) {
+			min-width: 100%;
+			max-height: 100%;
+		}
 	}
 }
 //===================================================
@@ -431,4 +440,59 @@ body {
 	font-family: "Myriad Pro";
 	font-size: 14px;
 	font-weight: 400;
+}
+//===============================================
+.project-body {
+	margin: 0 auto;
+}
+.project__body {
+	display: flex;
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 100px 0px 50px 0px;
+}
+.project__column {
+	flex: 0 0 50%;
+	padding: 0px 10px;
+}
+.project__image {
+	width: 814px;
+	height: 543px;
+	margin: 0px 0px 30px 0px;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+.project__item {
+	padding: 50px 50px 40px 35px;
+	max-width: 421px;
+	min-height: 540px;
+	display: flex;
+	background-color: #f2f2f2;
+
+	flex-direction: column;
+}
+.project__title {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 6.32px;
+	padding: 0px 0px 30px 0px;
+}
+.project__text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: #595757;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 25.89px;
+	min-height: 350px;
+	padding: 0px 0px 50px 0px;
+}
+.project__button a {
+	text-align: start;
+	margin: 0px !important;
+	text-align: center;
 }
