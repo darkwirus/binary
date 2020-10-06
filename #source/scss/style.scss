@@ -18,6 +18,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -280,7 +281,9 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	padding: 90px 0px 100px 0px;
+	height: 390px;
 }
 .partner__content {
 	height: 390px;
@@ -300,12 +303,11 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	max-width: 600px;
-	padding: 0px 0px 200px 0px;
 }
 //===================================================
 
 .contacts {
-	margin: 0px 0px 100px 0px;
+	margin: 185px 0px 100px 0px;
 }
 .contacts__body {
 	max-width: 910px;
