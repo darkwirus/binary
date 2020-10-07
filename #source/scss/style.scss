@@ -5,11 +5,10 @@ body {
 	font-family: "Lato", sans-serif;
 }
 .wrapper {
-	// max-width: 1500px;
 	width: 100%;
 	height: 100%;
 	margin: 0 auto;
-	@media (max-width: 1020px) {
+	@media (max-width: 770px) {
 		padding: 0 15px;
 	}
 }
@@ -24,9 +23,24 @@ body {
 }
 
 .header__container {
+	padding-top: 150px;
+	@media (max-width: 420px) {
+		padding-top: 80px;
+	}
 }
 .header__logo {
-	padding: 150px 0;
+	width: 195px;
+	height: 135px;
+	margin: 0 auto 150px auto;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	@media (max-width: 420px) {
+		width: 156px;
+		height: 108px;
+		margin: 0 auto 80px auto;
+	}
 }
 .header__title {
 	color: #ffffff;
@@ -36,6 +50,7 @@ body {
 	letter-spacing: 5.43px;
 	line-height: 40px;
 	margin: 0px 0px 139px 0px;
+
 	&--subtitle {
 		font-size: 26px;
 		font-weight: 400;
@@ -52,6 +67,19 @@ body {
 		position: absolute;
 		left: 50%;
 		margin: 49px 0 0 -52.5px;
+		@media (max-width: 420px) {
+			width: 60px;
+			height: 1px;
+			margin: 35px 0 0 -30px;
+		}
+	}
+	@media (max-width: 420px) {
+		font-size: 22px;
+		line-height: 30px;
+		margin: 0px 0px 70px 0px;
+		&--subtitle {
+			font-size: 18px;
+		}
 	}
 }
 .header__row {
@@ -115,6 +143,9 @@ body {
 	&:hover {
 		color: #ada074;
 	}
+	@media (max-width: 420px) {
+		font-size: 12px;
+	}
 }
 //==================================================
 
@@ -124,9 +155,15 @@ body {
 	max-width: 825px;
 	margin: 130px auto 60px auto;
 	text-align: center;
+	@media (max-width: 420px) {
+		margin: 60px auto 40px auto;
+	}
 }
 .about-body__title {
 	margin: 0px 0px 70px 0px;
+	@media (max-width: 420px) {
+		margin: 0px 0px 45px 0px;
+	}
 }
 .title {
 	color: #000000;
@@ -145,9 +182,18 @@ body {
 		left: 50%;
 		margin: 35px 0 0 -40.5px;
 	}
+	@media (max-width: 420px) {
+		&:after {
+			width: 46px;
+			margin: 20px 0 0 -23px;
+		}
+	}
 }
 .about-body__h2 {
 	margin-bottom: 73px;
+	@media (max-width: 420px) {
+		margin-bottom: 30px;
+	}
 }
 .about-body__text {
 	text-align: center;
@@ -221,16 +267,20 @@ body {
 .portfolio__filter {
 }
 .filter {
+	padding: 0 15px;
 }
 .filter__list {
+	margin: 0 auto;
+	max-width: 300px;
 	display: flex;
-	justify-content: center;
-	& li {
-		margin: 0px 50px 0px 0px;
-		&:last-child {
-			margin: 0;
-		}
-	}
+	justify-content: space-between;
+	padding: 0 15px;
+	// & li {
+	// 	margin: 0px 50px 0px 0px;
+	// 	&:last-child {
+	// 		margin: 0;
+	// 	}
+	// }
 }
 .filter__item {
 	cursor: pointer;
@@ -320,20 +370,20 @@ body {
 .contacts__feedback {
 	display: flex;
 	margin: 0 -15px;
-
+	position: relative;
 	@media (max-width: 1020px) {
-		flex-wrap: wrap;
+		flex-wrap: wrap-reverse;
 	}
 }
 .contacts__column {
-	flex: 0 1 50%;
+	flex: 0 0 50%;
 	padding: 0 15px;
 	max-width: 50%;
 	flex-direction: column;
 	margin: 0px 0px 100px 0px;
 	@media (max-width: 1020px) {
-		flex: 0 1 100%;
-		flex-wrap: wrap;
+		flex: 0 0 100%;
+		max-width: 100%;
 	}
 }
 .contacts__form {
@@ -344,19 +394,22 @@ body {
 .contacts__input {
 	display: flex;
 	justify-content: space-between;
-	flex: 0 0 50%;
 
 	& div {
 		flex-direction: column;
-		margin: 0px 0px 75px 0px;
+		margin: 0px 15px 75px 0px;
+		max-width: 161px;
 		span {
 			display: block;
 			padding: 0px 0px 20px 0px;
 		}
 	}
+	& div:last-child {
+		margin: 0;
+	}
 	& input {
-		display: flex;
-		width: 161px;
+		display: inline-block;
+		width: 100%;
 		height: 35px;
 		background-color: #f8f7f7;
 		line-height: 35px;
@@ -428,7 +481,17 @@ body {
 	padding: 50px 0px;
 }
 .footer__logo {
-	margin: 0px 0px 40px 0px;
+	width: 195px;
+	height: 135px;
+	margin: 0px auto 40px auto;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+	@media (max-width: 420px) {
+		width: 156px;
+		height: 108px;
+	}
 }
 .footer__links a {
 	color: #a4a4a4;
