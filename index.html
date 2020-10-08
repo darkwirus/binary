@@ -9,39 +9,44 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/vendors.js"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/forms.js"></script>
 </head>
 
 <body>
 	<div class="body">
-		<header class="header wrapper">
-			<div class="header__container">
-				<div class="header__logo">
-					<img src="img/logo.png" alt="LOGO" />
-				</div>
-				<div class="header__title">
-					Clear, smart, attractive design <br>
-					<span class="header__title--subtitle">for your app, logo, website</span>
-				</div>
-				<div class="header__row">
-					<div class="header__button button button--w">
-						<a href="./project.html"><span>READ MORE</span></a>
+		<div class="mainblock">
+			<header class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<a href="#mainblock" class="goto"><img src="img/logo.png" alt="LOGO" /></a>
+					</div>
+					<div class="header__title">
+						Clear, smart, attractive design <br>
+						<span class="header__title--subtitle">for your app, logo, website</span>
+					</div>
+					<div class="header__row">
+						<div class="header__button button button--w">
+							<a href="./project.html"><span>READ MORE</span></a>
+						</div>
+						<a href="#header__nav" class="header__arrow goto"><img src="img/Arrow-down.png" alt="" /></a>
 					</div>
 				</div>
-			</div>
-		</header>
+			</header>
+		</div>
 		<nav class="header__nav wrapper">
 			<ul class='header__list'>
 				<li>
-					<a href="#" class="header__link active">home</a>
+					<a href="#mainblock" class="header__link active goto">home</a>
 				</li>
 				<li>
-					<a href="#" class="header__link">about us</a>
+					<a href="#about" class="header__link goto">about us</a>
 				</li>
 				<li>
-					<a href="#" class="header__link">portfolio</a>
+					<a href="#portfolio" class="header__link goto">portfolio</a>
 				</li>
 				<li>
-					<a href="#" class="header__link">contact</a>
+					<a href="#contacts" class="header__link goto">contact</a>
 				</li>
 			</ul>
 		</nav>
@@ -154,16 +159,18 @@
 							<div class="contacts__input">
 								<div>
 									<span class="contacts__input-name">YOUR NAME</span>
-									<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
+									<input autocomplete="off" class="req" type="text" name="form[]" data-value=""
+										class="input" />
 								</div>
 								<div>
 									<span class="contacts__input-name">YOUR E-MAIL</span>
-									<input autocomplete="off" type="text" name="form[]" data-value="" class="input" />
+									<input autocomplete="off" class="req" type="text" name="form[]" data-value=""
+										class="input" />
 								</div>
 							</div>
 							<div class="contacts__textarea">
 								<span class="contacts__input-name">MESSAGE</span>
-								<textarea name="form[]"></textarea>
+								<textarea name="form[]" class="req"></textarea>
 							</div>
 							<button class="contacts__button button button--b" type="submit"><a>SEND</a></button>
 						</form>
@@ -186,12 +193,12 @@
 		</div>
 		<div class="footer wrapper">
 			<div class="footer__body container">
-				<div class="footer__logo"><img src="img/logo.png" alt="LOGO" /></div>
+				<div class="footer__logo"><a href="#mainblock" class="goto"><img src="img/logo.png" alt="LOGO" /></a></div>
 				<div class="footer__links">
-					<a href="">Home</a>
+					<a href="#mainblock" class="goto">Home</a>
 					<a href="">Facebook</a>
 					<a href="">Linkedin</a>
-					<a href="">Contact</a>
+					<a href="#contacts" class="goto">Contact</a>
 				</div>
 				<div class="footer__copy">© 2015. All Rights Reserved </div>
 			</div>
